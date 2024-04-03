@@ -32,3 +32,6 @@ jobs:
  
     - name: Run Testsuite
       run: vendor/bin/phpunit tests/
+
+    - name: Hit Forge or Envoyer deployment url
+      run: curl -Is http://www.google.com | head -n 1
